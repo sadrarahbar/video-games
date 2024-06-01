@@ -1,6 +1,7 @@
+
 function ListGroup() {
   let items = ['tehran', 'saveh', 'hamedan', 'shiraz'];
-    items = [];
+  // items = [];
   //   const getMessage = () => {
   //     return items.length === 0 ? <p>No item found</p> : null;
   //   };
@@ -12,7 +13,11 @@ function ListGroup() {
       {items.length === 0 && <p>No item found</p>} {/* trusy */}
       <ul className='list-group'>
         {items.map((item, index) => (
-          <li key={index} className='list-group-item'>
+          <li
+            key={index}
+            className='list-group-item'
+            onClick={() => console.log('clicked')}
+          >
             {item}
           </li>
         ))}
