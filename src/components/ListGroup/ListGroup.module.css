@@ -1,0 +1,11 @@
+.list-group{
+    list-style-type: circle;
+}
+
+.listGroup{
+    list-style-type: decimal;
+}
+
+.container{
+    background-color: rebeccapurple;
+}
